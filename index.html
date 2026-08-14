@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pociato Coffee & Pizza brings artisan Neapolitan pizza and coffee to locations across Selangor and Cyberjaya.">
+    <meta name="theme-color" content="#f5efe6">
+    <title>Pociato Coffee & Pizza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Pociato Coffee and Pizza home">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>Pociato Coffee &amp; Pizza</span>
+        </a>
+        <div class="nav-links">
+          <a href="#home" data-section="home">Home</a>
+          <a href="#menu" data-section="menu">Menu</a>
+          <a href="#locations" data-section="locations">Locations</a>
+          <a href="#connect" data-section="connect">Connect</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img src="assets/kopinook-hero.jpg" alt="A warmly lit café counter with tables and greenery" fetchpriority="high">
+        <div class="hero-shade"></div>
+        <div class="hero-content shell">
+          <p class="eyebrow light">Coffee · Pizza · Good company</p>
+          <h1 id="hero-title">Coffee and pizza,<br><em>made for your table.</em></h1>
+          <p class="hero-copy">Pociato Coffee &amp; Pizza brings artisan Neapolitan pizza, comforting food and great coffee together across Selangor and Cyberjaya.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#menu">Explore the menu</a>
+            <a class="button ghost" href="#locations">Find a location</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section shell" aria-labelledby="intro-title">
+        <p class="eyebrow">The Pociato table</p>
+        <div class="intro-grid">
+          <h2 id="intro-title">Pizza with soul.<br>Coffee with character.</h2>
+          <div>
+            <p class="lead">From a quick coffee to a long meal with friends, Pociato is a place to settle in over food made with care.</p>
+            <p class="micro-note">Now serving multiple locations</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section" id="menu" aria-labelledby="menu-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Menu preview</p>
+              <h2 id="menu-title">A taste of Pociato</h2>
+            </div>
+            <p>Sample dishes are shown here while the official Pociato menu is being prepared.</p>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab active" type="button" role="tab" aria-selected="true" data-category="drinks">Drinks</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-category="mains">Mains</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-category="desserts">Desserts</button>
+          </div>
+          <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+          <p class="menu-note">Sample menu only. Official items and prices will be added soon.</p>
+        </div>
+      </section>
+
+      <section class="feature-strip" aria-label="Pociato Coffee and Pizza experience">
+        <div class="shell feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow light">Made for sharing</p>
+            <h2>Good food has a way of bringing people together.</h2>
+            <p>Come for the coffee, stay for the pizza, and make a little more room at the table.</p>
+          </div>
+          <img src="assets/kopinook-coffee.jpg" alt="Fresh coffee being poured into a ceramic cup" loading="lazy">
+        </div>
+      </section>
+
+      <section class="visit-section section shell" id="locations" aria-labelledby="locations-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Come say hello</p>
+            <h2 id="locations-title">Find your Pociato</h2>
+          </div>
+          <p>Choose the Pociato location closest to you and get directions in a tap.</p>
+        </div>
+
+        <div class="locations-grid">
+          <article class="location-card"><p class="detail-label">Kajang</p><h3>Taman Kajang Utama</h3><a class="location-link" href="https://share.google/MMiGOV0y9rWr7Wgvv" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a></article>
+          <article class="location-card"><p class="detail-label">Cyberjaya</p><h3>CBD 3 Cyberjaya</h3><a class="location-link" href="https://share.google/eIHHMFY4WVukVf7o6" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a></article>
+          <article class="location-card"><p class="detail-label">Cheras</p><h3>Bandar Tun Hussein Onn</h3><a class="location-link" href="https://share.google/5oV1oLbyCv1xDQGDD" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a></article>
+          <article class="location-card"><p class="detail-label">Semenyih</p><h3>Eco Majestic</h3><a class="location-link" href="https://www.google.com/search?client=safari&amp;hl=en-my&amp;q=Pociato%20Coffee%20%26%20Pizza%20Eco%20Majestic%2C%20Semenyih" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </section>
+
+      <section class="contact-section section" id="connect" aria-labelledby="connect-title">
+        <div class="shell contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">Stay in the loop</p>
+            <h2 id="connect-title">Follow along with Pociato.</h2>
+            <p>Find new dishes, pizza moments, location updates and more on our social channels.</p>
+          </div>
+          <aside class="connect-card" aria-label="Pociato Coffee and Pizza links">
+            <p class="detail-label">Pociato Coffee &amp; Pizza</p>
+            <a class="button primary" href="https://www.instagram.com/pociatocoffee/" target="_blank" rel="noopener">Follow on Instagram</a>
+            <a class="button secondary" href="https://www.tiktok.com/@pociatocoffee" target="_blank" rel="noopener">Follow on TikTok</a>
+            <a class="button secondary" href="https://linktr.ee/pociatocoffee" target="_blank" rel="noopener">All Pociato links</a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">P</span><span>Pociato Coffee &amp; Pizza</span></a>
+          <p>Coffee, pizza, and good company across Selangor and Cyberjaya.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#menu">Menu</a>
+          <a href="#locations">Locations</a>
+          <a href="#connect">Connect</a>
+        </div>
+        <div class="social-links" aria-label="Social links">
+          <a href="https://www.instagram.com/pociatocoffee/" target="_blank" rel="noopener" aria-label="Pociato on Instagram">Instagram</a>
+          <a href="https://www.facebook.com/pociatocoffee/" target="_blank" rel="noopener" aria-label="Pociato on Facebook">Facebook</a>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© <span id="year"></span> Pociato Coffee &amp; Pizza.</span>
+        <span>Menu and hours coming soon</span>
+      </div>
+      <div class="shell footer-language">
+        <div class="language-switcher" aria-label="Language selector">
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+          <button type="button" data-language="ms" aria-pressed="true">BM</button>
+        </div>
+      </div>
+    </footer>
+
+    <a class="whatsapp" href="https://linktr.ee/pociatocoffee" target="_blank" rel="noopener" aria-label="Open Pociato contact links">
+      <span aria-hidden="true">↗</span>
+      <span>Contact</span>
+    </a>
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  </body>
+</html>
