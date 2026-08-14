@@ -77,7 +77,7 @@ const menuDescriptions = {
   }
 };
 
-let currentLanguage = new URLSearchParams(location.search).get('lang') === 'en' ? 'en' : 'ms';
+let currentLanguage = 'ms';
 
 const grid = document.querySelector('#menu-grid');
 const tabs = [...document.querySelectorAll('.tab')];
@@ -136,10 +136,6 @@ function applyLanguage(language, updateUrl = true) {
   const activeTab = tabs.find(tab => tab.classList.contains('active'));
   renderMenu(activeTab?.dataset.category ?? 'drinks');
 }
-
-document.querySelectorAll('[data-language]').forEach(button => {
-  button.addEventListener('click', () => applyLanguage(button.dataset.language));
-});
 
 const topButton = document.querySelector('.back-to-top');
 const header = document.querySelector('.site-header');
